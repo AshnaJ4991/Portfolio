@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Portfolio - Data Analyst</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">AJ Portfolio</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-left animate-on-scroll">
+                    <div class="profile-image">
+                        <img src="profile.jpeg" alt="Ashna Jain">
+                    </div>
+                </div>
+                <div class="hero-right animate-on-scroll">
+                    <div class="hero-text">
+                        <h3 class="greeting">Hello I'm</h3>
+                        <h1 class="name">Ashna Jain</h1>
+                        <h2 class="title">Aspiring Data Analyst | Data Science Enthusiast</h2>
+                        <p class="description">Welcome to my digital portfolio! I build practical projects in Java, Python, Data Science, and Analytics, transforming ideas into clean, recruiter-friendly solutions that solve real-world problems.</p>
+                        <div class="buttons">
+                            <button class="btn primary" onclick="scrollToSection('projects')">View My Projects</button>
+                            <button class="btn secondary" onclick="scrollToSection('contact')">Contact Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-left">
+                    <div class="about-card animate-on-scroll">
+                        <h3>Quick Facts</h3>
+                        <ul class="facts-list">
+                            <li><i class="fas fa-map-marker-alt"></i> <span><strong>Location:</strong> Kishangarh, Rajasthan</span></li>
+                            <li><i class="fas fa-graduation-cap"></i> <span><strong>Education:</strong> B.Tech in Computer Science</span></li>
+                            <li><i class="fas fa-chart-line"></i> <span><strong>Focus:</strong> Data Science</span></li>
+                        </ul>
+                    </div>
+                    <div class="about-card animate-on-scroll">
+                        <h3>When I'm Not Coding</h3>
+                        <ul class="activities-list">
+                            <li><i class="fas fa-book-open"></i> Reading Tech Articles and staying updated with new technologies</li>
+                            <li><i class="fas fa-pencil-alt"></i> Sketching</li>
+                            <li><i class="fas fa-globe"></i> Surfing the Web</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-card animate-on-scroll">
+                        <h3>My Journey</h3>
+                        <p>Hello! I'm Ashna Jain, a Computer Science student passionate about turning complex concepts into practical solutions. My technical foundation began with Java and DSA, before naturally evolving into a specialized focus on Python, SQL, and data analytics. I enjoy building well-structured projects that blend robust problem-solving with clear, professional presentation. My short-term goal is to launch my career in a Data Analyst or Data Science role where I can drive immediate impact.</p>
+                    </div>
+                    <div class="about-card animate-on-scroll">
+                        <h3>My Approach</h3>
+                        <p>I believe in building meaningful technology that solves real-world problems cleanly and efficiently. Whether analyzing datasets or designing dashboards, I prioritize strong fundamentals, clear structure, and continuous learning. I am dedicated to maintaining consistency and refining my analytical thinking with every project I undertake. Ultimately, my long-term vision is to become a strong Data Scientist who architects impactful, data-driven solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3>Libraries</h3>
+                    <ul>
+                        <li><i class="fas fa-table"></i> Pandas</li>
+                        <li><i class="fas fa-superscript"></i> NumPy</li>
+                        <li><i class="fas fa-brain"></i> Scikit-learn</li>
+                        <li><i class="fas fa-chart-area"></i> Matplotlib</li>
+                        <li><i class="fas fa-wave-square"></i> Seaborn</li>
+                    </ul>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3>Data Science Concepts</h3>
+                    <ul>
+                        <li><i class="fas fa-robot"></i> Machine Learning</li>
+                        <li><i class="fas fa-chart-line"></i> Exploratory Data Analysis</li>
+                        <li><i class="fas fa-broom"></i> Data Cleaning</li>
+                        <li><i class="fas fa-server"></i> DBMS</li>
+                        <li><i class="fas fa-code"></i> Object Oriented Programming</li>
+                    </ul>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li><i class="fas fa-chart-line"></i> Power BI</li>
+                        <li><i class="fas fa-chart-bar"></i> Tableau</li>
+                        <li><i class="fas fa-file-excel"></i> Excel</li>
+                        <li><i class="fas fa-book"></i> JupyterLab</li>
+                        <li><i class="fab fa-github"></i> GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
+                        <li><i class="fas fa-users"></i> Team Collaboration</li>
+                        <li><i class="fas fa-sync-alt"></i> Adaptability</li>
+                        <li><i class="fas fa-brain"></i> Creativity</li>
+                        <li><i class="fas fa-rocket"></i> Quick Learner</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learning" class="section">
+        <div class="container">
+            <h2 class="section-title">Learning Journey</h2>
+            <div class="learning-card animate-on-scroll">
+                <p>My learning journey focuses on advanced areas of Data Science and Artificial Intelligence. I am currently exploring Machine Learning, Deep Learning, NLP, and Generative AI while building real-world data analytics and dashboard projects.</p>
+                <div class="learning-tags">
+                    <span class="tag">Artificial Intelligence (AI)</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Deep Learning (DL)</span>
+                    <span class="tag">Natural Language Processing (NLP)</span>
+                    <span class="tag">Generative AI (GenAI)</span>
+                    <span class="tag">Advanced Data Analytics</span>
+                    <span class="tag">Streamlit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Music Recommendation System">
+                    </div>
+                    <h3>Music Recommendation System</h3>
+                    <p>Content-based music recommendation system using NLP with TF-IDF and cosine similarity.</p>
+                    <div class="tech-stack">
+                        <span class="tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="tag"><i class="fas fa-table"></i> Pandas</span>
+                        <span class="tag"><i class="fas fa-calculator"></i> NumPy</span>
+                        <span class="tag"><i class="fas fa-cogs"></i> Scikit-learn</span>
+                        <span class="tag"><i class="fas fa-language"></i> NLP (TF-IDF)</span>
+                        <span class="tag"><i class="fas fa-stream"></i> Streamlit</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="btn primary small">Live Demo</a>
+                        <a href="https://github.com/AshnaJ4991/Music-Recommendation-System" target="_blank" rel="noopener noreferrer" class="btn secondary small">Source Code</a>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coffee Shop Sales Analytics">
+                    </div>
+                    <h3>Coffee Shop Sales Analytics Dashboard</h3>
+                    <p>Exploratory data analysis on coffee shop sales data to identify demand patterns and revenue trends.</p>
+                    <div class="tech-stack">
+                        <span class="tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="tag"><i class="fas fa-table"></i> Pandas</span>
+                        <span class="tag"><i class="fas fa-chart-bar"></i> Matplotlib</span>
+                        <span class="tag"><i class="fas fa-chart-pie"></i> Seaborn</span>
+                        <span class="tag"><i class="fas fa-chart-line"></i> Power BI</span>
+                        <span class="tag"><i class="fas fa-file-excel"></i> Excel</span>
+                        <span class="tag"><i class="fas fa-database"></i> SQL</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="btn primary small">Live Demo</a>
+                        <a href="https://github.com/AshnaJ4991/Coffee-Shop-Sales" target="_blank" rel="noopener noreferrer" class="btn secondary small">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+
+                <!-- Certificate 1 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <img src="Image1.jpeg" alt="SQL Certificate">
+                        </div>
+                        <div class="cert-back">
+                            <h3>SQL Certification</h3>
+                            <p><strong>Issued by:</strong> Udemy</p>
+                            <p><strong>Date:</strong> 2025</p>
+                            <p>SQL Queries, Joins, Data Filtering</p>
+                            <a href="https://www.udemy.com/certificate/UC-cf31ef6f-3014-40ad-9168-3f10f6cdecb6/" target="_blank" rel="noopener noreferrer" class="btn">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <img src="Image2.jpeg" alt="Excel Certificate">
+                        </div>
+                        <div class="cert-back">
+                            <h3>Microsoft Excel Certification</h3>
+                            <p><strong>Issued by:</strong> Udemy</p>
+                            <p><strong>Date:</strong> 2025</p>
+                            <p>Excel, Data Analysis, Power Query</p>
+                            <a href="https://www.udemy.com/certificate/UC-42d633e2-45d1-4bb9-a9a5-95c4de6909b4/" target="_blank" rel="noopener noreferrer" class="btn">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <img src="Image3.jpeg" alt="Power BI Certificate">
+                        </div>
+                        <div class="cert-back">
+                            <h3>Power BI Certification</h3>
+                            <p><strong>Issued by:</strong> Udemy</p>
+                            <p><strong>Date:</strong> 2025</p>
+                            <p>Power BI, Data Visualization, DAX</p>
+                            <a href="https://www.udemy.com/certificate/UC-9699b311-dd78-44fb-9068-a59d1bf299fa/" target="_blank" rel="noopener noreferrer" class="btn">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <img src="Image4.jpeg" alt="Data Analytics Certificate">
+                        </div>
+                        <div class="cert-back">
+                            <h3>Data Analytics Course</h3>
+                            <p><strong>Issued by:</strong> TuteDude</p>
+                            <p><strong>Date:</strong> 2025</p>
+                            <p>EDA, Data Analysis, Visualization</p>
+                            <a href="https://upskill.tutedude.com/certificate/TD-ASHN-DA-1114" target="_blank" rel="noopener noreferrer" class="btn">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 5 -->
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <img src="Image5.jpeg" alt="Cloud Computing Certificate">
+                        </div>
+                        <div class="cert-back">
+                            <h3>Cloud Computing</h3>
+                            <p><strong>Issued by:</strong> NPTEL</p>
+                            <p><strong>Date:</strong> 2024</p>
+                            <p>Cloud Architecture, Virtualization</p>
+                            <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs11/Course/NPTEL25CS11S133730018704237254.pdf" target="_blank" rel="noopener noreferrer" class="btn">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                
+                <!-- 1st Achievement Card -->
+                <div class="achievement-card animate-on-scroll">
+                    <div class="achievement-icon">
+                        🚀
+                    </div>
+                    <h3>Infernoverse 24-Hour Hackathon Participation</h3>
+                    <p>Active participation in the Infernoverse hackathon demonstrating teamwork and creativity.</p>
+                    <p style="color: #a78bfa; margin-top: 10px; font-weight: 600;">November 2025</p>
+                    <div class="project-buttons" style="justify-content: center; margin-top: 20px;">
+                        <span class="btn secondary small" style="pointer-events: none;">Hackathon Achievement</span>
+                        <a href="Hackthon.png" target="_blank" class="btn primary small view-btn">
+                            View
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2nd Achievement Card -->
+                <div class="achievement-card animate-on-scroll">
+                    <div class="achievement-icon">
+                        🔥
+                    </div>
+                    <h3>50+ Day Streak on LeetCode</h3>
+                    <p>Maintained a 50+ day coding streak solving DSA problems.</p>
+                    <p style="color: #a78bfa; margin-top: 10px; font-weight: 600;">March 2026</p>
+                    <div class="project-buttons" style="justify-content: center; margin-top: 20px;">
+                        <span class="btn secondary small" style="pointer-events: none;">Coding Achievement</span>
+                    </div>
+                </div>
+
+                <!-- 3rd Achievement Card -->
+                <div class="achievement-card animate-on-scroll">
+                    <div class="achievement-icon">
+                        💡
+                    </div>
+                    <h3>100+ LeetCode Questions Solved</h3>
+                    <p>Solved over 100 coding problems on LeetCode covering arrays, recursion, trees, and problem-solving patterns. Also maintained a 50+ day coding streak while improving efficiency.</p>
+                    <p style="color: #a78bfa; margin-top: 10px; font-weight: 600;">March 2026</p>
+                    <div class="project-buttons" style="justify-content: center; margin-top: 20px;">
+                        <span class="btn secondary small" style="pointer-events: none;">Coding Achievement</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">My Resume</h2>
+
+            <!-- CREDENTIALS -->
+            <div class="credentials-container animate-on-scroll">
+                <a href="mailto:jainashna47@gmail.com" class="credential-pill">
+                    <i class="fas fa-envelope"></i> jainashna47@gmail.com
+                </a>
+                <a href="tel:+918619069370" class="credential-pill">
+                    <i class="fas fa-phone"></i> +91 8619069370
+                </a>
+                <a href="https://www.linkedin.com/in/ashna-jain-b86872280/" target="_blank" rel="noopener noreferrer" class="credential-pill">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/AshnaJ4991" target="_blank" rel="noopener noreferrer" class="credential-pill">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+
+            <!-- TABS NAVIGATION -->
+            <div class="tabs-container animate-on-scroll">
+                <button class="tab-btn active" data-tab="tab-education">Education</button>
+                <button class="tab-btn" data-tab="tab-skills">Skills</button>
+                <button class="tab-btn" data-tab="tab-projects">Projects</button>
+                <button class="tab-btn" data-tab="tab-training">Training</button>
+                <button class="tab-btn" data-tab="tab-certificates">Certificates</button>
+            </div>
+
+            <!-- TAB CONTENTS -->
+            <div class="tab-contents-container animate-on-scroll">
+                
+                <!-- EDUCATION TAB -->
+                <div id="tab-education" class="tab-content active">
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Lovely Professional University</h4>
+                            <h5 class="cv-card-subtitle">Phagwara, Punjab</h5>
+                            <div class="cv-card-text">
+                                <p>Bachelor of Technology – Computer Science and Engineering</p>
+                                <p><strong>CGPA:</strong> 7.2</p>
+                            </div>
+                        </div>
+                        <div class="cv-date-badge">Since Aug 2023</div>
+                    </div>
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">K.D Jain Public School</h4>
+                            <h5 class="cv-card-subtitle">Kishangarh, Rajasthan</h5>
+                            <div class="cv-card-text">
+                                <p>Intermediate PCM</p>
+                                <p><strong>Percentage:</strong> 75%</p>
+                            </div>
+                        </div>
+                        <div class="cv-date-badge">Mar 2022 – May 2023</div>
+                    </div>
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">K.D Jain Public School</h4>
+                            <h5 class="cv-card-subtitle">Kishangarh, Rajasthan</h5>
+                            <div class="cv-card-text">
+                                <p>Matriculation</p>
+                                <p><strong>Percentage:</strong> 86.4%</p>
+                            </div>
+                        </div>
+                        <div class="cv-date-badge">Mar 2020 – May 2021</div>
+                    </div>
+                </div>
+
+                <!-- SKILLS TAB -->
+                <div id="tab-skills" class="tab-content">
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Languages</h4>
+                            <div class="cv-card-text">
+                                <p>Java (Primary), Python, SQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Tools & Technologies</h4>
+                            <div class="cv-card-text">
+                                <p>Power BI (DAX), Tableau, Excel (Power Query, Formulas), GitHub, JupyterLab</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Libraries & Concepts</h4>
+                            <div class="cv-card-text">
+                                <p>Pandas, NumPy, Machine Learning, Data Cleaning, EDA, DBMS, OOP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Soft Skills</h4>
+                            <div class="cv-card-text">
+                                <p>Problem Solving, Team Collaboration, Adaptability, Creativity, Quick Learner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECTS TAB -->
+                <div id="tab-projects" class="tab-content">
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Music Recommendation System</h4>
+                            <h5 class="cv-card-subtitle">Python, NLP</h5>
+                            <ul class="cv-card-bullets">
+                                <li>Built a content-based music recommendation system using TF-IDF and cosine similarity</li>
+                                <li>Combined song titles and artist metadata for feature engineering</li>
+                                <li>Developed a Streamlit application providing top-5 recommendations</li>
+                            </ul>
+                            <div class="cv-card-tech">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">NumPy</span>
+                                <span class="tag">Scikit-learn</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">Streamlit</span>
+                            </div>
+                            <a href="https://github.com/AshnaJ4991/Music-Recommendation-System" target="_blank" class="view-btn">View Code</a>
+                        </div>
+                        <div class="cv-date-badge">Jan 2026 – Feb 2026</div>
+                    </div>
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Coffee Shop Sales Analytics Dashboard</h4>
+                            <h5 class="cv-card-subtitle">Data Analytics Project</h5>
+                            <ul class="cv-card-bullets">
+                                <li>Conducted exploratory data analysis on coffee shop sales data</li>
+                                <li>Identified customer demand patterns and peak revenue periods</li>
+                                <li>Built Power BI dashboards validated using Python</li>
+                            </ul>
+                            <div class="cv-card-tech">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">Matplotlib</span>
+                                <span class="tag">Seaborn</span>
+                                <span class="tag">Power BI</span>
+                                <span class="tag">Excel</span>
+                                <span class="tag">SQL</span>
+                            </div>
+                            <a href="https://github.com/AshnaJ4991/Coffee-Shop-Sales" target="_blank" class="view-btn">View Code</a>
+                        </div>
+                        <div class="cv-date-badge">Dec 2025 – Jan 2026</div>
+                    </div>
+                </div>
+
+                <!-- TRAINING TAB -->
+                <div id="tab-training" class="tab-content">
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Fundamentals of Data Structures and Algorithms</h4>
+                            <h5 class="cv-card-subtitle">CipherSchools</h5>
+                            <ul class="cv-card-bullets">
+                                <li>Completed structured training covering arrays, linked lists, stacks, queues, sorting and trees</li>
+                                <li>Built an Event Reminder System using Java data structures</li>
+                                <li>Strengthened debugging and algorithm implementation skills</li>
+                            </ul>
+                            <div class="cv-card-tech">
+                                <span class="tag">Java</span>
+                                <span class="tag">Data Structures</span>
+                                <span class="tag">Algorithms</span>
+                            </div>
+                            <a href="DSAwithJAVA.pdf" target="_blank" class="view-btn">View Certificate</a>
+                        </div>
+                        <div class="cv-date-badge">Jun 2025 – Jul 2025</div>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATES TAB -->
+                <div id="tab-certificates" class="tab-content">
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">SQL</h4>
+                            <h5 class="cv-card-subtitle">Udemy</h5>
+                            <a href="Image1.jpeg" target="_blank" class="view-btn">View Certificate</a>
+                        </div>
+                        <div class="cv-date-badge">Sep 2025</div>
+                    </div>
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Power BI Mastery</h4>
+                            <h5 class="cv-card-subtitle">Udemy</h5>
+                            <a href="Image3.jpeg" target="_blank" class="view-btn">View Certificate</a>
+                        </div>
+                        <div class="cv-date-badge">Sep 2025</div>
+                    </div>
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Microsoft Excel</h4>
+                            <h5 class="cv-card-subtitle">Udemy</h5>
+                            <a href="Image2.jpeg" target="_blank" class="view-btn">View Certificate</a>
+                        </div>
+                        <div class="cv-date-badge">Sep 2025</div>
+                    </div>
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Data Analytics Course</h4>
+                            <h5 class="cv-card-subtitle">TuteDude</h5>
+                            <a href="Image4.jpeg" target="_blank" class="view-btn">View Certificate</a>
+                        </div>
+                        <div class="cv-date-badge">Jul 2025</div>
+                    </div>
+                    <div class="cv-card">
+                        <div class="cv-card-content">
+                            <h4 class="cv-card-title">Cloud Computing</h4>
+                            <h5 class="cv-card-subtitle">NPTEL</h5>
+                            <a href="Image5.jpeg" target="_blank" class="view-btn">View Certificate</a>
+                        </div>
+                        <div class="cv-date-badge">May 2025</div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Resume Download Button -->
+            <div class="resume-container animate-on-scroll">
+                <a href="AshnaCV1 (7).pdf" download class="btn resume-btn">
+                    📄 Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form animate-on-scroll">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info animate-on-scroll">
+                    <div class="info-item">
+                        <h4>Email:</h4>
+                        <a href="mailto:jainashna47@gmail.com">jainashna47@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <h4>Phone:</h4>
+                        <a href="tel:+918619069370">+91 8619069370</a>
+                    </div>
+                    <div class="info-item">
+                        <h4>Location:</h4>
+                        <p>Kishangarh, Rajasthan, India</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>LinkedIn:</h4>
+                        <a href="https://www.linkedin.com/in/ashna-jain-b86872280/" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/ashna-jain-b86872280/</a>
+                    </div>
+                    <div class="info-item">
+                        <h4>GitHub:</h4>
+                        <a href="https://github.com/AshnaJ4991" target="_blank" rel="noopener noreferrer">github.com/AshnaJ4991</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
