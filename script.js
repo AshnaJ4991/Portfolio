@@ -1,3 +1,6 @@
+(function(){
+    emailjs.init("QMvnlZsYhwN2_zUas");
+})();
 // Smooth scrolling for navigation links
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
@@ -102,10 +105,10 @@ document.querySelector('.contact-form form').addEventListener('submit', function
     const originalBtnText = submitBtn.textContent;
     submitBtn.textContent = 'Sending...';
 
-    // emailjs.sendForm('SERVICE_ID', 'TEMPLATE_ID', formElement, 'PUBLIC_KEY')
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this, 'YOUR_PUBLIC_KEY')
+    // Send the form using EmailJS
+    emailjs.sendForm('service_865q6yg', 'template_x5jvnqn', this)
         .then(() => {
-            alert('Thank you for your message! It has been sent successfully.');
+            alert('Message sent successfully');
             this.reset();
         })
         .catch((error) => {
