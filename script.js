@@ -93,11 +93,29 @@ document.querySelectorAll('.animate-on-scroll').forEach(el => {
     observer.observe(el);
 });
 
-// Form submission (basic - just prevent default and show alert)
+// Form submission using EmailJS
 document.querySelector('.contact-form form').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Thank you for your message! I will get back to you soon.');
-    this.reset();
+    
+    // Temporarily change button text
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+
+    // emailjs.sendForm('SERVICE_ID', 'TEMPLATE_ID', formElement, 'PUBLIC_KEY')
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this, 'YOUR_PUBLIC_KEY')
+        .then(() => {
+            alert('Thank you for your message! It has been sent successfully.');
+            this.reset();
+        })
+        .catch((error) => {
+            alert('Oops! Something went wrong. Please try again later.');
+            console.error('EmailJS Error:', error);
+        })
+        .finally(() => {
+            // Restore button text regardless of success or failure
+            submitBtn.textContent = originalBtnText;
+        });
 });
 
 // Continuous Typing effect for the title
